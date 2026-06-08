@@ -1,6 +1,10 @@
-# RH Azure Desafio - Sistema de Gestão de Funcionários
+# RH Azure - Sistema de Gestão de Funcionários
 
 Web API em .NET 8 com deploy no Microsoft Azure.
+
+## 🎯 Objetivo do Projeto
+
+Este sistema simula um CRUD de funcionários com persistência em SQL e registro de logs em Azure Table Storage, com deploy em ambiente cloud utilizando Azure App Service.
 
 ## Tecnologias
 - **ASP.NET Core 8** - Web API
@@ -51,7 +55,7 @@ Acesse o Swagger em: `https://localhost:5001/swagger`
 ## Deploy no Azure
 
 ### 1. Criar recursos no Azure
-- **Resource Group**: crie um grupo para organizar os recursos
+- **Resource Group**: criei um Resource Group para centralizar todos os recursos do sistema
 - **Azure SQL Server + Database**: para persistência dos funcionários
 - **Storage Account + Table**: para armazenar os logs (a tabela `FuncionarioLog` é criada automaticamente)
 - **App Service**: para hospedar a API (plano Free é suficiente para testes)
@@ -92,3 +96,19 @@ Toda ação (criar, atualizar, deletar) registra automaticamente um log na Azure
 - **PartitionKey**: Departamento do funcionário
 - **RowKey**: GUID único
 - **TipoAcao**: Criou (1), Atualizou (2), Deletou (3)
+
+## 🧠 O que eu aprendi
+
+- Como estruturar uma Web API em camadas
+- Integração com Azure SQL Database
+- Uso de Azure Table Storage para logs
+- Deploy de aplicação .NET no Azure App Service
+- Configuração de connection strings em ambiente cloud
+
+## 🚀 Possíveis melhorias futuras
+
+- Autenticação JWT
+- Role-based authorization (RH/Admin)
+- Dockerização da aplicação
+- CI/CD com GitHub Actions
+- Monitoramento com Application Insights
