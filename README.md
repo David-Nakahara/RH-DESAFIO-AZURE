@@ -1,4 +1,4 @@
-# RH Azure - Sistema de Gestão de Funcionários
+# RH Azure Desafio - Sistema de Gestão de Funcionários
 
 Web API em .NET 8 com deploy no Microsoft Azure.
 
